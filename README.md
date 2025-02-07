@@ -4,18 +4,21 @@ Easy real-time user interface for controlling the humanoid robot NAO, suitable f
 ## Interface description
 When you start your UI as detailed in next section, you will see the following setup:
 
-![ui](https://github.com/user-attachments/assets/d54b50b8-1588-40ed-bc8e-1fa8e399aaed)
+![ui](https://github.com/user-attachments/assets/eb56fd6e-530e-4ed6-8314-ab391246af2a)
+
 
 There are 3 columns: camera, controls, and mix.
 1. CAMERA
    
-   ![camera](https://github.com/user-attachments/assets/99b0d571-6f7a-40c0-9aee-190e50dd1832)
+   ![camera](https://github.com/user-attachments/assets/8e418066-9f7f-40fa-b589-e7bf19e3c70a)
+
 
    By clicking on 'Start Camera', you will start seeing what NAO is looking at. You can start and stop at any time.
 
 3. CONTROLS
    
-   ![controls](https://github.com/user-attachments/assets/91ca1598-39d4-4b7f-ad0d-0cd862d869ae)
+   ![controls](https://github.com/user-attachments/assets/2a0b921f-9338-4c11-b32e-c55affbdff26)
+
    
    In this column you can control NAO in real-time.
    The Volume frame controls the volume at which NAO speaks.
@@ -25,13 +28,15 @@ There are 3 columns: camera, controls, and mix.
 
 5. MIX
    
-   ![mix](https://github.com/user-attachments/assets/6325f739-c015-453c-87a9-4c9a4d6a96f7)
+   ![mix](https://github.com/user-attachments/assets/ffe1b081-e7ad-4034-9bee-09b57c9664ee)
+
    
    When needed, the user can click on the question button on top right of the page, which will pop the sentence at the bottom of the image: "A Mix consists of speech and movement actions. First, set the       parameters for the action in the adjacent column. Once you're satisfied with the settings, select the type of action and click 'Add to Mix' to add it to your list. You can then remove, reorder, or execute the list."
    To add actions to the mix, you need to set up the action in the controls column, then select the type of action in the mix column (speech or movement) and finally click on 'add to mix'. Do this as many times as needed. To move or remove an action from the list, click on it and then on the button in the right part of the column.
    When everything is correctly set up, click on 'execute mix' to make NAO perform all of the actions in the list one after the other. Please note that once you click on 'execute mix', you won't be able to stop or modify the mix until it is done.
    
-   ![mix2](https://github.com/user-attachments/assets/bdc0dfb6-888b-4ca4-95f0-378cf9888ea9)
+   ![mix2](https://github.com/user-attachments/assets/5abc6f64-d830-4be4-a827-d22ca4ad5558)
+
 
 
 
@@ -47,7 +52,8 @@ There are 3 columns: camera, controls, and mix.
 ## Developer guide
 To add movements, just add an 'else' statement in 'execute_movements' function and describe them in terms of junctions roll. (line 140)
 
-![move-code](https://github.com/user-attachments/assets/be920539-b51a-4259-90e3-e12fb1d56667)
+![move-code](https://github.com/user-attachments/assets/c889ff3f-642f-43eb-93a3-927d60fd33fa)
+
 
 To make them appear on the movement list on the UI, add the name of your new movement in line 372.
 
