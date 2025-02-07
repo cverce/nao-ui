@@ -41,7 +41,7 @@ There are 3 columns: camera, controls, and mix.
 3. Download miniconda and create an environment using the requirements in the 'environment.yml' file. Note that the python version must be 2.7.18.
 4. Connect to the same Wi-Fi to which the robot is connected.
 5. Turn on the NAO by pressing the button on his chest for a couple of seconds. Wait a couple of minutes until it's awake.
-6. Download the naoui.py file and insert the ip address and port of your NAO in lines 17 and 18 (you can discover it by pressing its chest once).
+6. Download the naoui.py file and insert the ip address (line 17, use quote marks) and port (line 18, no quote marks) of your NAO (you can discover it by pressing its chest once).
 7. From the terminal, activate the miniconda environment, then navigate to the folder where you have the 'naoui.py' file and execute it.
 
 ## Developer guide
